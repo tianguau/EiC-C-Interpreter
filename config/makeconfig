@@ -118,30 +118,19 @@ if [ ! -f $CONFIG_DIR/$PLT/make.params ] ; then
 	exit 1;
 fi
 
+cat << EOF >> $TOP_DIR/make.proj
+###############################################
+# This is a makeconfig generated file
+#
 
-cp -f $CONFIG_DIR/$PLT/make.params  $TOP_DIR 
-cp -f $CONFIG_DIR/make.rules  $TOP_DIR
-cp -f $CONFIG_DIR/NormalNodeTargets  $TOP_DIR 
-chmod  -w $TOP_DIR/make.rules 
-chmod  -w $TOP_DIR/NormalNodeTargets 
-CONFIG_DIR=$TOP_DIR
+CONFIG_DIR = $CONFIG_DIR
+TOP_DIR = $TOP_DIR
 
+include $CONFIG_DIR)/make.params
+-include $CONFIG_DIR)/override.params
+include $CONFIG_DIR)/project.params
 
-echo "###############################################" > $TOP_DIR/make.proj
-echo "# This is a makeconfig generated file" >> $TOP_DIR/make.proj
-echo "#" >> $TOP_DIR/make.proj 
-
-echo CONFIG_DIR = $CONFIG_DIR >> $TOP_DIR/make.proj
-echo TOP_DIR = '$(CONFIG_DIR)' >> $TOP_DIR/make.proj
-
-echo include '$(CONFIG_DIR)'/make.params  >> $TOP_DIR/make.proj
-if [ -f $TOP_DIR/override.params ] ; then
-	echo include '$(CONFIG_DIR)'/override.params >> $TOP_DIR/make.proj
-fi
-
-echo include '$(CONFIG_DIR)'/project.params >> $TOP_DIR/make.proj
-echo " " >> $TOP_DIR/make.proj
-
-echo "###############################################" >> $TOP_DIR/make.proj	
+###############################################
+EOF
 
 

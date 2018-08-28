@@ -118,7 +118,7 @@ if [ ! -f $CONFIG_DIR/$PLT/make.params ] ; then
 	exit 1;
 fi
 
-cat << EOF >> $TOP_DIR/make.proj
+cat << EOF > $TOP_DIR/make.proj
 ###############################################
 # This is a makeconfig generated file
 #
@@ -126,9 +126,9 @@ cat << EOF >> $TOP_DIR/make.proj
 CONFIG_DIR = $CONFIG_DIR
 TOP_DIR = $TOP_DIR
 
-include $CONFIG_DIR)/make.params
--include $CONFIG_DIR)/override.params
-include $CONFIG_DIR)/project.params
+include $CONFIG_DIR/$PLT/make.params
+-include $TOP_DIR/override.params
+include $TOP_DIR/project.params
 
 ###############################################
 EOF

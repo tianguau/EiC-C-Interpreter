@@ -146,6 +146,5 @@ clean::
 	$(RM) config/genstdio
 
 clobber::clean
-	$(RM) make.params make.proj make.rules NormalNodeTargets
 
 

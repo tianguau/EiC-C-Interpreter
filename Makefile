@@ -110,23 +110,18 @@ modules:
 	done
 
 binary: bintree modules install
-	cp ./batch2.sh     EiC/batch2.sh
-	cp ./Makefile.Bin  EiC/Makefile
-	cp $(HOME)/bin/eic  EiC/eicc
+	cp new_main/eicc  EiC/eicc
 	strip EiC/eicc
 	cp $(INCFILES)   EiC/include 
 	cp $(INCSYSFILES) EiC/include/sys
 	cp $(DOCFILES)   EiC/doc
-	cp README.BIN    EiC/README
 	cp LICENCE       EiC/LICENCE
-	cp Distribution.txt EiC/Distribution.txt
-	cp make.rules    EiC/
+	cp $(CONFIG_DIR)/make.rules    EiC/
 	rm -f `find ./EiC/module -name "Makefile"`
 	echo  "PLATFORM = $(PLATFORM)" > EiC/make.proj
 	tar cvf EiC$(PLATFORM)_$(EiC_NUM).tar  EiC
 	gzip EiC$(PLATFORM)_$(EiC_NUM).tar 
 	mv  EiC$(PLATFORM)_$(EiC_NUM).tar.gz  EiC$(PLATFORM)_$(EiC_NUM).tgz
-	rm -fr EiC
 
 #############################
 # Part 5: COMMON RULES and 

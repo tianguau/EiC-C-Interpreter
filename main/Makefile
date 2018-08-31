@@ -30,7 +30,7 @@ include $(CONFIG_DIR)/make.rules
 
 ## 'INSTALL_DIR' is globally set in $(TOP)/project.params
 ##       INSTALL_DIR = $(HOME)/bin
-       EXT=""
+       EXT=
 
 
 ################################################# 

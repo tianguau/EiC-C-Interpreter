@@ -65,7 +65,7 @@ void enter_header(FILE *fp,char *header)
     fprintf(fp,"#ifndef EiC_%s_H\n",buff);
     fprintf(fp,"#define EiC_%s_H\n\n",buff);
 
-    fprintf(fp,"#pragma push_safeptr\n\n");
+    //fprintf(fp,"#pragma push_safeptr\n\n");
 
 }
 
@@ -77,7 +77,7 @@ void end_header(FILE *fp,char *header)
     strncpy(buff,header,len);
     buff[len] = 0;
 
-    fprintf(fp,"\n#pragma pop_ptr\n\n");
+    //fprintf(fp,"\n#pragma pop_ptr\n\n");
     fprintf(fp,"#endif    /* end EiC_%s_H */\n",buff);
 }
 

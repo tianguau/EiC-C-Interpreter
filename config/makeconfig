@@ -24,9 +24,6 @@ getOS='
 	# two lines added by Alf Clement
 	HP*UX ) whichOS="_HPUX";
             ;;
-	# 2 lines added by Alexey Zakhlestine (indy@mgupp.ru)
-	*DOS ) whichOS="_DJGPP";
-            ;;
 	*) whichOS=_$OS;;
 	esac
 '

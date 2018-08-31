@@ -1,7 +1,7 @@
 #ifndef _FLOATH
 #define _FLOATH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 typedef union {
     unsigned short _Usv[4];
@@ -11,7 +11,7 @@ typedef union {
 
 #include <sys/float.h>
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* _FLOATH */
 

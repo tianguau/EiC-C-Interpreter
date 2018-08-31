@@ -1,7 +1,7 @@
 #ifndef _ASSERTH
 #define _ASSERTH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 
 void _Assert(char *msg);
@@ -16,7 +16,7 @@ void _Assert(char *msg);
 #endif
 
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* end _ASSERTH */
 

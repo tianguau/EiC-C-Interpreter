@@ -2,7 +2,7 @@
 #ifndef STDIOH_
 #define STDIOH_
 
-#pragma  push_safeptr
+//#pragma  push_safeptr
 
 #include <stdarg.h>   /* this must get fixed */
 
@@ -72,7 +72,7 @@ void perror(const char *msg);
 FILE *popen( const char *cmd, const char *mode);
 int pclose( FILE *fp);
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif
 

@@ -1,7 +1,7 @@
 #ifndef _MATH
 #define _MATH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #define HUGE_VAL 1.0e38
 
@@ -28,7 +28,7 @@ double fabs(double a);
 double floor(double a);
 double fmod(double a, double b);
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* _MATH */
 

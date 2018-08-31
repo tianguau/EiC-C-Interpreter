@@ -1,7 +1,7 @@
 #ifndef _TIMEH
 #define _TIMEH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #define _need_clock_t
 #define _need_time_t
@@ -18,6 +18,6 @@
 #include "sys/time.h"
 
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* _TIMEH */

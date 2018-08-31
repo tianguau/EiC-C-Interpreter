@@ -1,7 +1,7 @@
 #ifndef _TERMIOSH
 #define _TERMIOSH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #if 0
 #include "sys/stdtypes.h"
@@ -24,6 +24,6 @@ int tcsendbreak(int, int);
 int tcflush(int, int);
 
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif

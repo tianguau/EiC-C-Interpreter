@@ -71,7 +71,7 @@ int  main(int argc, char ** argv)
     }
 
    
-#if  !defined(WIN32) && !defined(_DJGPP)
+#if  !defined(WIN32)
     home = getenv("HOMEofEiC");
     if(!home) { /* check for /usr/local/EiC or /usr/EiC*/
 	if(access("/usr/local/EiC", R_OK) == 0)

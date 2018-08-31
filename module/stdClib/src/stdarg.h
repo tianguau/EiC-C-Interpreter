@@ -1,7 +1,7 @@
 #ifndef _STDARGH
 #define _STDARGH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 
 typedef char *va_list;
@@ -17,7 +17,7 @@ int _AR_t_SiZe;
 
 _AR_t_SiZe = _get_AR_t_size();
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif
 

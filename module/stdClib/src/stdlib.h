@@ -1,7 +1,7 @@
 #ifndef _STDLIBH
 #define _STDLIBH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #define _need_size_t
 #define _need_NULL
@@ -227,7 +227,7 @@ void * (bsearch)(const void * _key, const void * _base,
 	
 #endif
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* _STDLIBH */
 

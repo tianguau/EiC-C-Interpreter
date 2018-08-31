@@ -1,7 +1,7 @@
 #ifndef ERRNOH_
 #define ERRNOH_
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 
 #include <sys/errno.h>
@@ -21,6 +21,6 @@ extern int errno;
 
 
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* ERRNOH_ */

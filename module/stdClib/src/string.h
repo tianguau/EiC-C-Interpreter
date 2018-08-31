@@ -1,7 +1,7 @@
 #ifndef _STRINGH
 #define _STRINGH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #define _need_size_t
 #define _need_NULL
@@ -49,7 +49,7 @@ void bcopy(char *from, char *to, int length);
 #endif
 
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* _STRINGH */
 

@@ -147,7 +147,7 @@ void EiC_exit_call(int i)
 {
 #ifndef _SEIC_
     size_t fopen_entry = fopen_NextEntryNum(); 
-#if defined(WIN32) || defined(_DJGPP)
+#if defined(WIN32)
     signal(SIGTERM, EiC_exit_call);
 #else
     signal(SIGUSR1, EiC_exit_call);
@@ -165,7 +165,7 @@ void EiC_exit_call(int i)
 void  EiC_bus_err(int i)
 {
 
-#if defined(WIN32) || defined(_DJGPP)
+#if defined(WIN32)
     signal(SIGABRT,EiC_bus_err);
 #else
     signal(SIGBUS, EiC_bus_err);
@@ -702,7 +702,7 @@ void EiC_startEiC(int argc, char **argv)
 {
     extern int EiC_load_history(char *fname,int prompt);
 
-#if defined(WIN32) || defined(_DJGPP)
+#if defined(WIN32)
     signal(SIGABRT, EiC_bus_err);
 #else
     signal(SIGBUS, EiC_bus_err);
@@ -711,7 +711,7 @@ void EiC_startEiC(int argc, char **argv)
     signal(SIGSEGV, EiC_stor_access);
     signal(SIGFPE, EiC_float_err);
     signal(SIGINT, EiC_term_int);
-#if defined(WIN32) || defined(_DJGPP)
+#if defined(WIN32)
     signal(SIGTERM, EiC_exit_call);
 #else
     signal(SIGUSR1, EiC_exit_call);

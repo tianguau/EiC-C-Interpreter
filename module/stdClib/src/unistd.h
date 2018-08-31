@@ -1,7 +1,7 @@
 #ifndef UNISTDH_
 #define UNISTDH_
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #include "sys/types.h"
 
@@ -62,7 +62,7 @@ int execl(const char *s1, const char *s2, ...);
 
 #endif
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif  /* end  UNISTDH_ */
 

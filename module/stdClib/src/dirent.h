@@ -1,7 +1,7 @@
 #ifndef _DIRENTH
 #define _DIRENTH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #include "sys/types.h"
 #include "sys/dirent.h"
@@ -24,6 +24,6 @@ void rewinddir(DIR *dirp);
 void seekdir(DIR *dirp, long loc);
 long telldir(DIR *dirp);
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* end _DIRENTH */

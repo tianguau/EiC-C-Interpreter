@@ -28,14 +28,9 @@ include $(CONFIG_DIR)/make.rules
 #################################################
 
 
-ifneq ($(PLATFORM),_DJGPP)
 ## 'INSTALL_DIR' is globally set in $(TOP)/project.params
 ##       INSTALL_DIR = $(HOME)/bin
        EXT=""
-else
-       INSTALL_DIR = c:/djgpp/bin
-       EXT=.exe
-endif
 
 
 ################################################# 

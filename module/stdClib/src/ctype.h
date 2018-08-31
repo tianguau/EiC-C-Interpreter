@@ -8,7 +8,7 @@
 #ifndef _CTYPEH
 #define _CTYPEH
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #define _C_SPA 1                       /* space */
 #define _C_DIG 2                       /* digit indicator */
@@ -48,7 +48,7 @@ unsigned short *_get_ctype(void);
 _CtYpE = _get_ctype();
 #endif
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif
 

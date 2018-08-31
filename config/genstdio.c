@@ -7,12 +7,6 @@ contained in the system headers.
 #define _POSIX_SOURCE
 #define _XOPEN_SOURCE
 
-#ifdef _DJGPP
-#define NO_POSIX
-#endif
-
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <errno.h>

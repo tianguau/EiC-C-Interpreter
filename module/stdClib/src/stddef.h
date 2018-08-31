@@ -1,7 +1,7 @@
 #ifndef STDDEFH_
 #define STDDEFH_
 
-#pragma push_safeptr
+//#pragma push_safeptr
 
 #define _need_NULL
 #define _need_ptrdiff_t
@@ -17,6 +17,6 @@
 #undef _need_wchar_t
 #undef _need_NULL
 
-#pragma pop_ptr
+//#pragma pop_ptr
 
 #endif /* _STDDEFH */

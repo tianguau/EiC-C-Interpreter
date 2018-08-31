@@ -104,7 +104,7 @@ void crt_inttypedef(FILE *fp, char *id, int sz)
    else if(sz == 12) s = "short"; /* close enough */
 
 #ifndef NO_LONGLONG   
-   else if(sizeof(long long) == sz) s = "long long";
+   else if(sizeof(double long) == sz) s = "double long";
 #else
    else if(sizeof(double) == sz) s = "double";
 #endif
@@ -126,7 +126,7 @@ void crt_uinttypedef(FILE *fp, char *id, int sz)
    else if(sizeof(int) == sz)   s = "unsigned int";
    else if(sizeof(long) == sz)  s = "unsigned long";
 #ifndef NO_LONGLONG
-   else if(sizeof(long long) == sz) s = "unsigned long long";
+   else if(sizeof(double long) == sz) s = "unsigned double long";
 #else
    else if(sizeof(double) == sz) s="double";
 #endif

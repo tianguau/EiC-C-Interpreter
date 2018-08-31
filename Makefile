@@ -78,6 +78,8 @@ BINTREE = EiC\
         EiC/include/sys \
         EiC/doc\
         EiC/module\
+        include\
+        include/sys
 
 bintree:
 	@for i in $(BINTREE)  ;\
@@ -95,11 +97,9 @@ INCSYSFILES = ./include/sys/*.h
 DOCFILES =  ./eic.man
 
 MODULES = ./module/MathStats\
-        ./module/gnuplot\
-        ./module/tools\
-        ./module/examples\
-        ./module/cgihtml\
-        ./module/xv\
+          ./module/gnuplot\
+          ./module/link2eic\
+          ./module/stdClib
 
 modules:
 	@for i in $(MODULES)  ;\

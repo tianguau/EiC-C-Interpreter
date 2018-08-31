@@ -19,7 +19,7 @@ HOMEofEiC :=  $(shell pwd)/..
 # Part 2: COMMON MAKE PARAMETERS
 
 include $(TOP)/make.proj
-include $(TOP)/make.rules
+include $(CONFIG_DIR)/make.rules
 
 #################################################
 # INSTALL_DIR can be any directory

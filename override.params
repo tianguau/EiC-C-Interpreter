@@ -22,8 +22,8 @@ MAKE = make
 #STD_CFLAGS = -Xc -g 
 # from the original EiC (strict ANSI)
 #STD_CFLAGS = -ansi -pedantic -fsigned-char -Wall 
-STD_CFLAGS = -fsigned-char -Wall 
-#STD_CFLAGS = -g -fsigned-char -Wall 
+#STD_CFLAGS = -fsigned-char -Wall 
+STD_CFLAGS = -g -fsigned-char -Wall 
 #INCLUDE_FLAGS =
 
 #CC = gcc -DDMALLOCH 

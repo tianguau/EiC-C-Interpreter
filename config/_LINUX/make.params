@@ -1,6 +1,7 @@
 	 PLATFORM = _LINUX
                CC = gcc
-       STD_CFLAGS = -ansi -pedantic -O2 -fsigned-char -Wall 
+      #STD_CFLAGS = -ansi -pedantic -O2 -fsigned-char -Wall 
+       STD_CFLAGS = -ansi -pedantic -g  -fsigned-char -Wall 
     INCLUDE_FLAGS = -I-
 
                AR = ar

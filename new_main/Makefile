@@ -105,7 +105,7 @@ sentinel: $(eicOBJS) $(DEP_LIBS) link2eic.h
 	sentinel $(CC) $(CFLAGS) -static -o $(INSTALL_DIR)/eic $(eicOBJS) $(LIBDIRS) $(LIBS) $(EXTRALIBS)
 
 installBinary:
-	mv eicc$(EXT) $(INSTALL_DIR)/eim$(EXT)  
+	cp eicc$(EXT) $(INSTALL_DIR)/eim$(EXT)  
 
 headers::
 

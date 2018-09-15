@@ -38,6 +38,7 @@ TSTDIRS = gnutests testcode lcctest posix.1
 #### runtest and shell scripts
 
 $(INSTALL_DIR)/eictester:runtest
+	mkdir -p $(INSTALL_DIR)
 	cp runtest $(INSTALL_DIR)/eictester
 all::
 install::$(INSTALL_DIR)/eictester 

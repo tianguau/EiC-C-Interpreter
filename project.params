@@ -7,7 +7,7 @@
 #     % makeconfig  config_dir proj_dir platform  
 
 #      INSTALL_DIR = $(HOME)/bin
-      INSTALL_DIR = $(HOME)/local/bin
+      INSTALL_DIR = $(TOP_DIR)/EiC/bin
       INCLUDE_DIR = $(TOP_DIR)/include
           LIB_DIR = $(TOP_DIR)/lib
       PRJ_DEFINES = 

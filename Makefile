@@ -77,6 +77,7 @@ BINTREE = EiC\
         EiC/include \
         EiC/include/sys \
         EiC/doc\
+        EiC/bin\
         EiC/module\
         include\
         include/sys

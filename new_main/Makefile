@@ -97,7 +97,7 @@ $(INSTALL_DIR)/eic$(EXT): $(DEP_LIBS) $(eicOBJS)
 	$(INSTALL_EiC) 
 
 clobber::
-	$(RM) $(eicOBJS) $(INSTALL_DIR)/eic$(EXT)
+	$(RM) $(eicOBJS)
 clean::
 	$(RM) $(eicOBJS)
 

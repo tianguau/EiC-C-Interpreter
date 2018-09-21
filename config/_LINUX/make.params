@@ -8,7 +8,7 @@
           ARFLAGS = -rv
                RM = rm -f
           INSTALL = cp
-               MV = cp 
+               MV = mv 
              COPY = cp
              MAKE = make
 	    MKDIR = mkdir
